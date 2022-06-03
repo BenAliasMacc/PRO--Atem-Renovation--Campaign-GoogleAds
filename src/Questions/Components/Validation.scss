@@ -1,0 +1,35 @@
+/* Animation logo validation */
+
+.circleStroke {			
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: drawStrokeCircle 1.5s cubic-bezier(0,.97,.92,.92) forwards;
+}
+
+@keyframes drawStrokeCircle {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+    
+.circleBg {
+    opacity: 0;
+    /* animation: drawBgCircle 0.5s cubic-bezier(.15,.72,.63,.87) forwards 1.5s; */
+}
+
+@keyframes drawBgCircle {
+    to {
+        opacity: 1
+    }
+}
+    
+.circleShadow {
+    opacity: 0;
+    /* animation: drawShadowCircle 0.5s cubic-bezier(.15,.72,.63,.87) forwards 1.6s;    */
+}
+
+@keyframes drawShadowCircle {
+    to {
+        opacity: 0.15
+    }
+}

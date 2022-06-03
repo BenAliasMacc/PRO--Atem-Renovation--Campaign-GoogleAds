@@ -1,0 +1,12 @@
+.button-modal {
+    background-color:blue;
+}
+
+.button-modal:hover {
+    background-color:blue!important;
+    color: white;
+}
+
+.button-modal:hover em {
+    transform: scaleX(0.8);
+}

@@ -1,0 +1,181 @@
+.formulaire-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(103, 122, 135, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.formulaire, .validation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  min-height: 320px;
+  max-width: 832px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 7px 1px rgba(0,0,0,0.5);
+}
+
+.formulaire {
+    background-color: white;
+}
+
+.question {
+    &__title {
+        text-align: center;
+        padding: 16px;
+        & p {
+            color: #7c7c7c;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+    &__radio__big-card-design, &__input {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 16px;
+    }
+    &__radio__small-card-design {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-inline: 16px;
+        width: 100%;
+        flex: 1;
+        gap: 8px;
+        padding-bottom: 32px;
+    }
+}
+
+.validation {
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    & h1 {
+        color: white;
+        font-size: 2rem
+    }
+    &__image {
+        width: 150px;
+    }
+}
+
+.question__radio {
+    &__big-card-design--card, &__small-card-design--card {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 45%;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__small-card-design--card {
+        justify-self: center;
+        width: 100%;
+    }
+}
+
+.question__radio__small-card-design--card {
+    justify-self: center;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #a9b3c6;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        border-color: blue;
+        transition: border-color 0.4s, border 0.4s;
+    }
+    & p {
+        margin: 0;
+        padding-inline: 8px;
+    }
+}
+
+input {
+    padding-left: 16px;
+}
+
+input[type="radio"] {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+input[type="number"], input[type="text"], input[type="tel"], input[type="email"], input[type="date"], input[type="time"], input[type="textarea"] {
+    border: solid 1px black;
+    border-radius: 3px;
+    height: 48px;
+    width: 90%;
+    max-width: 720px;
+}
+
+input[type="number"]::placeholder, input[type="text"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder, input[type="date"]::placeholder, input[type="time"]::placeholder, input[type="textarea"]::placeholder {
+    color: #c0cad5;
+}
+
+.radio-image {
+    width: 75px;
+    height: 75px;
+}
+
+.prev, .next, .submit {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: blue;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.prev p, .next p, .submit p {
+  margin: 0!important
+}
+
+.arrow {
+  align-self: center;
+  width: 16px;
+  padding: 8px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    & img {
+        width: 20px;
+    }
+}
+
+/* cacher la modale */
+.hide {
+    visibility: hidden;
+}

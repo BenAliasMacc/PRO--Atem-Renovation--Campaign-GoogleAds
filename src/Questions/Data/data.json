@@ -1,0 +1,102 @@
+{
+    "data": [
+      {
+        "question": "question1",
+        "titre": "Les travaux concernent:",
+        "styles": {
+            "container": "question__radio__big-card-design",
+            "cards": "question__radio__big-card-design--card"
+        },
+        "inputs": [
+            {
+                "inputType": "radio",
+                "inputName": "Travaux",
+                "requiredStatus": true,
+                "choices": [
+                    {
+                        "name": "Une maison",
+                        "image": "https://www.jotform.com/uploads/tomguerreau.ads/form_files/maison%20new.61ee97c06dee05.85677018.jpg"
+                    },
+                    {
+                        "name": "Un Appartement",
+                        "image": "https://www.jotform.com/uploads/tomguerreau.ads/form_files/PHOTO-2022-01-24-12-44-45.61ee950314b615.09474320.jpg"
+                    }
+                ]
+            }
+        ] 
+      },
+      {
+        "question": "question2",
+        "titre": "Quelle est la surface habitable de votre logement ?",
+        "styles": {
+            "container": "question__input"
+        },
+        "description": "Surface en m²",
+        "inputs": [
+            {                
+                "inputType": "number",
+                "inputName": "surface",
+                "placeholder":"Ex: 23",
+                "requiredStatus": true,
+                "pattern": {
+                    "value": "/^[0-9]{4,6}$/",
+                    "message": "Les chiffres et caractères spéciaux ne sont pas autorisés"
+                }
+            },
+            {
+                "inputType": "text",
+                "inputName": "test",
+                "placeholder":"Ex: 23",
+                "requiredStatus": true,
+                "pattern": {
+                    "value": "/^[A-Za-z]+$/i",
+                    "message": "Les chiffres et caractères spéciaux ne sont pas autorisés"
+                }
+            }
+        ]
+      },
+      {
+        "question": "question3",
+        "titre": "Quelle est l’énergie de chauffage actuelle de votre logement ?",
+        "description": "Si vous avez plusieurs énergies de chauffage, indiquez-nous la principale",
+        "styles": {
+            "container": "question__radio__big-card-design",
+            "cards": "question__radio__big-card-design--card"
+        },
+        "inputs": [
+            {
+                "inputType": "radio",
+                "inputName": "Energie actuelle",
+                "required": true,
+                "choices": [
+                    {
+                        "name": "Chauffage au fioul",
+                        "image": "https://www.jotform.com/uploads/tomguerreau.ads/form_files/icon%20.61ee98ab4f2903.12289323.jpg"
+                    },
+                    {
+                        "name": "Chauffage electrique",
+                        "image": "https://www.jotform.com/uploads/tomguerreau.ads/form_files/icon.61ee98c05d3ab9.69489558.jpg"
+                    },
+                    {
+                        "name": "Chauffage au gaz",
+                        "image": "https://www.jotform.com/uploads/tomguerreau.ads/form_files/PHOTO-2022-01-24-12-50-07.61ee98d05692f6.80732509.jpg"
+                    },
+                    {
+                        "name": "Chauffage au bois",
+                        "image": "https://www.jotform.com/uploads/tomguerreau.ads/form_files/PHOTO-2022-01-24-12-50-07%202.61ee98e4e96377.16161700.jpg"
+                    },
+                    {
+                        "name": "Chauffage au charbon",
+                        "image": "https://www.jotform.com/uploads/tomguerreau.ads/form_files/PHOTO-2022-01-24-12-50-07%204.61ee98f8cc03f5.01959819.jpg"
+                    },
+                    {
+                        "name": "Pompe à Chaleur",
+                        "image": "https://www.jotform.com/uploads/tomguerreau.ads/form_files/PHOTO-2022-01-24-12-50-07%203.61ee990bc0d2f5.71543942.jpg"
+                    }
+                ]
+            }
+        ]
+      }
+    ]
+}
+
