@@ -56,7 +56,8 @@ const Questions = ({setOpenModalForm, hideModal, setHideModal, setOpenModalValid
                                                 <img className='radio-image' src={image} alt={name}/>
                                                 <p>{name}</p>
                                             </label>
-                                            <input type={inputType}
+                                            <input 
+                                                type={inputType}
                                                 id={name}
                                                 value={name}
                                                 {...register(inputName, {required: 'Ce champ est obligatoire'})}                                   
