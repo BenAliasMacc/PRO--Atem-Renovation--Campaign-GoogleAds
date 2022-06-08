@@ -47,7 +47,7 @@ const Questions = ({setOpenModalForm, hideModal, setHideModal, setOpenModalValid
 
                 <form className="question__form" onSubmit={handleSubmit(onSubmit)} >
                     {
-                        inputs.map(({ inputType, choices, inputName, placeholder }, index) => (
+                        inputs.map(({ inputType, choices, inputName, placeholder, pattern }, index) => (
                             <div key={index}>
                                 <div className={styles?.container} >
                                     {choices ? (choices.map(({ name, image }, index2) => (
@@ -71,7 +71,7 @@ const Questions = ({setOpenModalForm, hideModal, setHideModal, setOpenModalValid
                                             key={index} 
                                             {...register(inputName, {
                                                 required: 'Ce champ est obligatoire',
-                                                minLength: { value: 10, message: 'Vous devez saisir au moins 2 chiffres'}
+                                                pattern: { value: new RegExp(pattern.value), message: pattern.error }
                                             })}
                                         />
                                     )}

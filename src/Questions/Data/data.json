@@ -39,8 +39,8 @@
                 "placeholder":"Ex: 23",
                 "requiredStatus": true,
                 "pattern": {
-                    "value": "/^[0-9]{4,6}$/",
-                    "message": "Les chiffres et caractères spéciaux ne sont pas autorisés"
+                    "value": "^[0-9]+$",
+                    "error": "Seul les chiffres sont autorisés"
                 }
             },
             {
@@ -49,8 +49,8 @@
                 "placeholder":"Ex: 23",
                 "requiredStatus": true,
                 "pattern": {
-                    "value": "/^[A-Za-z]+$/i",
-                    "message": "Les chiffres et caractères spéciaux ne sont pas autorisés"
+                    "value": "^[A-Za-z]+$",
+                    "error": "Les chiffres et caractères spéciaux ne sont pas autorisés"
                 }
             }
         ]
